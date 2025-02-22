@@ -150,7 +150,7 @@ html::-webkit-scrollbar-thumb{
     margin-left: 70px;
 }
 
-.picture2 {
+.picture-right {
     width: 300px;
     border: 5px solid #000000;
     border-radius: 15px;
@@ -163,6 +163,7 @@ html::-webkit-scrollbar-thumb{
 .about-col2 {
     flex-basis: 70%;
     text-align: left;
+    color: black;
 }
 
 .sub-title {
@@ -187,24 +188,28 @@ html::-webkit-scrollbar-thumb{
 .baslik {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 25px;
+    color: black;
 }
 
 .baslik2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 160px;
     font-size: 20px;
+    color: black;
 }
 
 .baslik3{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
     margin-top: 50px;
+    color: black;
 }
 
 .baslik4{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
     margin-top: 150px;
+    color: black;
 }
 
 .sanatbaslik{
@@ -212,6 +217,7 @@ html::-webkit-scrollbar-thumb{
     font-size: 25px;
     text-align: right;
     margin-top: 60px;
+    color: black;
 }
 
 .hakkimda {
@@ -219,12 +225,14 @@ html::-webkit-scrollbar-thumb{
     font-size: 20px;
     text-align: left;
     margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .becerilerim {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     margin-left: 20px;
+    color: black;
 }
 
 .becerilerim2 {
@@ -279,13 +287,14 @@ html::-webkit-scrollbar-thumb{
     margin-top: 60px;
     font-weight: bolder;
     color: #000000;
+    
 }
 .certificates-flex {
     margin-top: 60px;
-    float: left;
+    margin-right: 90px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
     color: #ff6600;
 }
