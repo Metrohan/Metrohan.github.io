@@ -198,7 +198,7 @@ html::-webkit-scrollbar-thumb{
 .baslik3{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .baslik4{
@@ -212,6 +212,13 @@ html::-webkit-scrollbar-thumb{
     font-size: 25px;
     text-align: right;
     margin-top: 60px;
+}
+
+.hakkimda {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow,' Arial, sans-serif;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 20px;
 }
 
 .becerilerim {
