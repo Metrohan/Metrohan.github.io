@@ -1,184 +1,1019 @@
 <!DOCTYPE html>
-<html lang="tr">
-<head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Metehan Günen</title>
-    <meta name="description" content="Metehan Günen'in kişisel portföy websitesi.">
-    <script src="https://kit.fontawesome.com/a8a3857910.js" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1000, user-scalable=2"/>
-    <link href="https://fonts.google.com/specimen/Kenia" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="canonical" href="https://www.metehangunen.com"/>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4077998707179196"
-     crossorigin="anonymous"></script>
-     
-</head>
-<body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="img/logo.webp" class="logo" alt="Metehan Günen">
-                <h1 class="welcome-msg">Websiteme hoşgeldiniz!</h1>
-                <a href="#about" class="about-btn">Hakkımda</a>
-                <a href="#contact" class="contact-btn">İletişim</a>
-                <a href="#about"><i class="fa-sharp fa-solid fa-angles-down fa-beat-fade" style="color: #ff6600;"></i></a>
-            </nav>
-        </div>
+    
+    
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon"> 
+  </head>
+  <body>
+    <!-- Scroll Progress Bar -->
+<div id="scroll-bar" class="fixed right-6 top-1/2 transform -translate-y-1/2 h-64 w-1.5 bg-gray-700 rounded-full z-50 hidden sm:block">
+  <div id="scroll-indicator" class="bg-[#ff6600] h-0 w-full rounded-full transition-all duration-300 ease-out shadow-md shadow-[#ff6600]"></div>
+</div>
+
+    <!-- Hero Section -->
+<section class="position-relative container-fluid min-vh-100 d-flex justify-content-center align-items-center text-white overflow-hidden" style="background-color: #000000">
+  <!-- Hero Particle Background -->
+  <div id="particles-hero" class="position-absolute w-100 h-100 top-0 start-0" style="z-index: 0"></div>
+
+  <!-- Hero Content -->
+  <div class="container text-center position-relative" style="z-index: 1">
+    <h1 class="display-4 fw-bold">
+      <img src="./assets/logo.png" alt="Metehan Günen" class="logo">
+    </h1>
+    <a href="#projects" class="shadow__btn mt-4">Projeleri Görüntüle</a>
+  </div>
+</section>
+
+    <!-- About Me Section -->
+<section id="about" class="bg-black text-white py-20 px-6">
+  <div
+    class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left gap-10 px-4"
+  >
+    <!-- Profile Image -->
+    <div
+      class="flex-shrink-0 w-64 h-64 rounded-xl overflow-hidden shadow-lg grayscale hover:grayscale-0 transition duration-500"
+      id="about-img"
+    >
+      <img
+        src="./assets/image.png"
+        alt="Metehan Günen"
+        class="w-full h-full object-cover"
+      />
     </div>
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col1">
-                    <img src="img/picture.webp" class="picture" style="float:left" alt="Metehan Günen">
-                </div>
-                <div class="about-col2">
-                    <h1 class="sub-title">Hakkımda</h1>
-                    <li class="hakkimda">
-                        Bilgisayar Mühendisliği 3. sınıf öğrencisiyim. 
-                        Yazılım geliştirme, veri analizi, backend ve gömülü sistemlerle ilgileniyorum. 
-                        Çeşitli programlama dillerinde projeler geliştirerek becerilerimi sürekli geliştiriyorum. 
-                        Takım çalışmasına uyumlu, analitik düşünme becerisi güçlü ve yeni teknolojilere hızlı adapte olabilen biriyim. 
-                        Kariyerimi yazılımda backend veya veri analizi, donanımda ise gömülü sistemler alanında ilerletmeyi hedefliyorum. 
-                        Şu anda kısa süreli bir staj arıyorum.</li>
-                    <h1>Becerilerim</h1>
-                    <h2>Yazılım:</h2><br>
-                    <ul class="becerilerim">
-                        <li>C</li>
-                        <li>C++</li>
-                        <li>Python</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Git & GitHub</li>
-                        <li>MySQL</li>
-                        <li>SQL</li>
-                    </ul>
-                    <img src="img/picture-2.webp" class="picture-right" style="float: right;" alt="Metehan Günen">
-                    <h3 class="sanatbaslik" style="color: black;">Sanat:</h3>
-                    <pre class="becerilerim2" style="color: black;">• Elektro Gitar, Bass Gitar, Akustik Gitar, Perdesiz Gitar çalıyorum;
-                        modifiye ediyorum ve 
-                        yaptığım coverları <a href="https://www.youtube.com/@metogn" class="ytlink" target=”_blank”>YouTube Kanalım</a> 
-                        üzerinden paylaşıyorum.</pre>
-                    <pre class="becerilerim2" style="color: black;">• Son Dördün grubunda bass gitar çalıyorum. </pre>
-                    <a href="https://open.spotify.com/artist/6ky1Zbam6w20lKB6PWMH6d?si=rqjSbbRqRJ67W87D4sBxNg" style="color:#000000" class="spotify" target=”_blank”>
-                        <i class="fa-brands fa-spotify"></i>
-                    <a href="https://www.instagram.com/son4unmusic/" style="color:#000000" class="insta" target=”_blank”>
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    </li>
-                    <div class="egitimlerim">
-                        <h1>Eğitimlerim</h1>
-                        <br>
-                        <h3>Lise:</h3>
-                        <ul>
-                            <li class="egitimlerim-icerik" style="color: black;">Bolu Fen Lisesi (2018-2021)</li>
-                        </ul>
-                        <br>
-                        <h3>Üniversite:</h3>
-                        <ul>
-                            <li class="egitimlerim-icerik" style="color:black">
-                                İstinye Üniversitesi - Bilgisayar Mühendisliği (2022-2026)
-                                <h5>GPA: 2.90</h5>
-                            </li>   
-                        </ul>
-                </div>
-                <div class="projelerim">
-                    <h1>Projelerim</h1><br>
-                        <div class="proje">
-                            <a href="https://github.com/Metrohan/RSA-EncrypterDecrypter" class="projelerim-baslik">
-                                • RSA Encrypter/Decrypter
-                            </a>
-                            <p class="projelerim-icerik">
-                                Discrete Mathematics (Ayrık Matematik) dersinde öğrendiğim sayı
-                                teorisi kavramlarını uygulayarak Python'da bir RSA şifreleme/şifre
-                                çözme aracı kodladım.
-                            </p>
-                        </div>
-                        <div class="proje">
-                            <a href="https://github.com/enpastech/ENPAS" class="projelerim-baslik">
-                                • ENPAS
-                            </a>
-                            <p class="projelerim-icerik">
-                                Engelli sürücüler için ekibimle beraber IoT tabanlı akıllı park sistemi
-                                tasarladım ve geliştirdim. Kontrol için ESP32, fiziksel hareket için DC
-                                motorlar ve erişilebilirlik için bir mobil uygulama entegre ettim.
-                            </p>
-                    </div>
-                </div>
-                
-                <div class="certificates">
-                    <h1>Sertifikalarım</h1>
-                    <div class="certificates-flex">
-                        <div class="certificate-card">
-                            <img src="img/cert1.png" alt="Python Sertifikası">
-                            <p>Python Programlama Sertifikası</p>
-                            <a href="certificates/1.pdf" target="_blank">İncele</a>
-                        </div>
-                        <div class="certificate-card">
-                            <img src="img/cert2.png" alt="Git Sertifikası">
-                            <p>Git ve GitHub Sertifikası</p>
-                            <a href="certificates/2.pdf" target="_blank">İncele</a>
-                        </div>
-                        <div class="certificate-card">
-                            <img src="img/cert3.png" alt="Web Sertifikası">
-                            <p>Web Sitesi Kullanılabilirliği</p>
-                            <a href="certificates/3.pdf" target="_blank">İncele</a>
-                        </div>
-                        <div class="certificate-card">
-                            <img src="img/cert4.png" alt="Cloud&DevOps Sertifikası">
-                            <p>Cloud & DevOps Day</p>
-                            <a href="certificates/4.pdf" target="_blank">İncele</a>
-                        </div>
-                        <div class="certificate-card">
-                            <img src="img/cert5.png" alt="API Sertifikası">
-                            <p>Programlama Esasları: API'lar ve Web Hizmetleri</p>
-                            <a href="certificates/5.jpg" target="_blank">İncele</a>
-                        </div>
-                        <div class="certificate-card">
-                            <img src="img/cert6.jpg" alt="TECHNOVA Zirvesi Sertifikası">
-                            <p>TECHNOVA Zirvesi Sertifikası</p>
-                            <a href="certificates/6.jpg" target="_blank">İncele</a>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
+
+    <!-- Text Content -->
+    <div class="max-w-2xl" id="about-text">
+      <h2 class="text-3xl md:text-4xl font-semibold leading-snug mb-4">
+        <span class="text-[#ff6600] font-bold">Hakkımda</span>
+      </h2>
+
+      <p class="text-gray-300 text-lg leading-relaxed mb-6">
+        Bilgisayar Mühendisliği 4. sınıf öğrencisiyim. Backend ve IoT alanlarına ilgi duyuyorum. 
+        Bu ilgimin sebebi, bilgisayar mühendisliğinin hem donanım hem de yazılım üzerinde çalışma imkanı sunması. 
+        Farklı programlama dillerinde projeler geliştirerek becerilerimi sürekli pekiştiriyorum. 
+        Takım çalışmasına uyumlu, analitik düşünme yeteneğine sahip ve yeni teknolojileri hızla öğrenebilir durumdayım. 
+        Kariyer hedefim ise backend ve IoT alanında uzmanlaşmak.
+      </p>
+
+      <p class="text-gray-300 text-lg leading-relaxed mb-6">
+        Son Dördün adlı müzik grubunda Bas Gitar çalıyorum. Bununla birlikte Elektro, Akustik ve Perdesiz gitar da çalıyorum.
+        Coverlarımı Youtube, Tiktok ve Instagram hesabıma atıyorum. Bununla birlikte film izlemeyi ve kahve demlemeyi çok severim.
+      </p>
+
+      <!-- Social Icons -->
+      <ul class="example-2">
+        <li class="icon-content">
+          <a
+            href="https://www.linkedin.com/in/metehangunen"
+            aria-label="LinkedIn"
+            data-social="linkedin"
+            target="_blank"
+          >
+            <div class="filled"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="480" height="480" viewBox="0 0 48 48">
+              <path fill="#0288d1" d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"></path><path fill="#fff" d="M14 19H18V34H14zM15.988 17h-.022C14.772 17 14 16.11 14 14.999 14 13.864 14.796 13 16.011 13c1.217 0 1.966.864 1.989 1.999C18 16.11 17.228 17 15.988 17zM35 24.5c0-3.038-2.462-5.5-5.5-5.5-1.862 0-3.505.928-4.5 2.344V19h-4v15h4v-8c0-1.657 1.343-3 3-3s3 1.343 3 3v8h4C35 34 35 24.921 35 24.5z"></path>
+              </svg>
+          </a>
+          <div class="tooltip">LinkedIn</div>
+        </li>
+        <li class="icon-content">
+          <a
+            href="https://github.com/Metrohan"
+            aria-label="GitHub"
+            data-social="github"
+            target="_blank"
+          >
+            <div class="filled"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="240" height="240" viewBox="0 0 48 48">
+              <circle cx="28" cy="28" r="18" fill="#9fa8da"></circle><path fill="none" stroke="#18193f" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M35.054,38.836	C31.97,41.137,28.144,42.5,24,42.5C13.783,42.5,5.5,34.217,5.5,24c0-2.917,0.675-5.676,1.878-8.13"></path><path fill="none" stroke="#18193f" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13.869,8.518	C16.779,6.61,20.26,5.5,24,5.5c10.217,0,18.5,8.283,18.5,18.5c0,2.941-0.686,5.721-1.907,8.19"></path><path fill="#18193f" d="M34,23c0-1.574-0.576-3.038-1.558-4.275c0.442-1.368,0.93-3.771-0.242-5.648	c-2.251,0-3.73,1.545-4.436,2.514C26.602,15.213,25.333,15,24,15s-2.602,0.213-3.764,0.591c-0.706-0.969-2.184-2.514-4.436-2.514	c-1.328,2.126-0.526,4.45-0.073,5.43C14.638,19.788,14,21.334,14,23c0,3.78,3.281,6.94,7.686,7.776	c-1.309,0.673-2.287,1.896-2.587,3.38h-1.315c-1.297,0-1.801-0.526-2.502-1.415c-0.692-0.889-1.437-1.488-2.331-1.736	c-0.482-0.051-0.806,0.316-0.386,0.641c1.419,0.966,1.516,2.548,2.085,3.583C15.168,36.161,16.229,37,17.429,37H19v5.942h10v-7.806	c0-1.908-1.098-3.544-2.686-4.36C30.719,29.94,34,26.78,34,23z"></path>
+              </svg>
+          </a>
+          <div class="tooltip">GitHub</div>
+        </li>
+      </ul>
+
+      <!-- Download Resume Button -->
+      <div class="flex align-items-center justify-content-center mt-8" style="gap: 50px">
+        <a
+          href="./assets/MetehanGunenResume.pdf"
+          download
+        >
+          <div class="download-container">
+            <label class="download-label">
+              <input type="checkbox" class="download-input" />
+              <span class="download-circle"
+                ><svg
+                  class="download-icon"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M12 19V5m0 14-4-4m4 4 4-4"
+                  ></path>
+                </svg>
+                <div class="download-square"></div>
+              </span>
+              <p class="download-title">İndir</p>
+              <p class="download-title">Aç</p>
+            </label>
+          </div>
+        </a>
+        
+
+      </div>
     </div>
-    <footer>
-        <div id="contact">
-            <div class="container2">
-                <div class="row">
-                    <div class="contact1">
-                        <h1 class="sub-title2" style="color: #ff6600;">İletişim</h1><br>
-                        <p>
-                            <i class="fa-solid fa-envelope" style="color: #ff6600;"></i>
-                            metehangnn@outlook.com
-                        </p><br>
-                        <div class="social-icons">
-                            <a href="https://github.com/Metrohan" style="color:black" target=”_blank” aria-label="Github hesabım">
-                                <i class="fa-brands fa-github" style="color: #ff6600;"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/metehangunen/" style="color:black" target=”_blank” aria-label="Linkedin hesabım">
-                                <i class="fa-brands fa-linkedin" style="color: #ff6600;"></i>
-                            </a>
-                            <a href="https://www.youtube.com/@metogn" style="color:black" target=”_blank” aria-label="Youtube hesabım">
-                                <i class="fa-brands fa-youtube" style="color: #ff6600;"></i>
-                            </a>
-                            <a href="certificates/cv.pdf" style="color:#ff6600" class="cv" target=”_blank” aria-label="CV'me ulaşmak için tıklayın">
-                                <i class="fa-solid fa-scroll"></i>
-                            </a>
-                            <p class="cv-text">CV</h5>
-                        </div>  
-                    </div>
-                    <div class="copyright">
-                        <p>Bu site Metehan Günen tarafından yazılmıştır.</p>
-                    </div>
-                </div>
-            </div>
+  </div>
+</section>
+<!-- JOURNEY SECTION -->
+<section id="journey" class="bg-black text-white py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold mb-16 text-center text-[#ff6600]">Deneyim</h2>
+    
+    <div class="relative">
+      <!-- Vertical Line -->
+      <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#ff6600]"></div>
+
+      <!-- Timeline Card 1 - Right -->
+      <div class="relative mb-16 md:mb-24 md:flex justify-end">
+        <div class="hidden md:block absolute w-4 h-4 bg-[#ff6600] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+        <div class="md:w-1/2"></div>
+        <div class="md:w-1/2 md:pl-10">
+          <div class="bg-[#111] p-6 rounded-2xl border border-[#ff6600] shadow-lg journey-card">
+            <h3 class="text-xl font-semibold text-[#ff6600]">Internship at @BGTS (aka Bilge Adam Teknoloji)</h3>
+            <span class="text-sm text-gray-400">Tem 2025 - Ağu 2025</span>
+            <p class="mt-2 text-gray-300">Takımımla beraber Node.js, Express.js, Docker ve Reactive programlama kullanarak asenkron ve non-blocking bir webservisi yazdım.
+              Bu webservisine "/submit" ve "/status" endpointleri atayarak Prometheus ile bazı metrikleri ölçtüm ve Grafana kullanarak görselleştirdim. Daha sonra 
+              k6 kullanarak load test yaptım ve bu test sonuçlarına göre optimize ettim.
+            </p>
+          </div>
         </div>
-    </footer>
-</body>
+      </div>
+
+      <!-- Timeline Card 3 - Right -->
+      <div class="relative mb-16 md:mb-24 md:flex justify-start">
+        <div class="hidden md:block absolute w-4 h-4 bg-[#ff6600] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+        <div class="md:w-1/2 md:pr-10">
+          <div class="bg-[#111] p-6 rounded-2xl border border-[#ff6600] shadow-lg journey-card">
+            <h3 class="text-xl font-semibold text-[#ff6600]">Lisans - Bilgisayar Mühendisliği</h3>
+            <span class="text-sm text-gray-400">İstinye Universitesi, Devam ediyor (2022 - 2026)</span>
+            <p class="mt-2 text-gray-300">Okuduğum süre boyunca farklı farklı projeler yaptım. 
+              Bunlardan biri Yazılım Geliştirme Kulübü altında yaptığımız ve TEKNOFEST'e başvurduğumuz ENPAS projesiydi. 
+              Böylelikle Yazılım Geliştirme Kulübü'nde Proje Üyesi ve takımımın yaptığı seçim ile Proje Ekip Lideri oldum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECH STACK SECTION -->
+<section id="tech-stack" class="bg-black text-white py-20 px-6 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto flex flex-col gap-20">
+    <!-- FRONTEND -->
+    <div class="flex md:flex-row flex-col gap-8 items-start" id="frontend">
+      <!-- Label -->
+      <div class="w-full md:w-1/5 text-gray-400 text-lg font-bold sticky top-18">
+        <div class="category-label cursor-pointer hover:text-white transition" onclick="document.querySelector('#frontend').scrollIntoView({behavior: 'smooth'})">FRONTEND</div>
+      </div>
+
+      <!-- Tech Grid -->
+      <div class="w-full md:w-4/5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 reveal-section">
+        <!-- Tech Icons Here -->
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"  class="w-6 h-6"/><span class="text-lg">HTML</span></div>
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="w-6 h-6" />
+         <span class="text-lg">CSS</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" class="w-6 h-6"><span class="text-lg">C</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" class="w-6 h-6"><span class="text-lg">C++</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-6 h-6"><span class="text-lg">Python</span></div>
+      </div>
+    </div>
+
+    <!-- BACKEND -->
+    <div class="flex md:flex-row flex-col gap-8 items-start" id="backend">
+      <div class="w-full md:w-1/5 text-gray-400 text-lg font-bold sticky top-18">
+        <div class="category-label cursor-pointer hover:text-white transition" onclick="document.querySelector('#backend').scrollIntoView({behavior: 'smooth'})">BACKEND</div>
+      </div>
+      <div class="w-full md:w-4/5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 reveal-section">
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="w-6 h-6"><span class="text-lg">Node.js</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" class="w-6 h-6 bg-white rounded p-0.5"><span class="text-lg">Express.js</span></div>
+      </div>
+    </div>
+
+    <!-- DATABASE -->
+    <div class="flex md:flex-row flex-col gap-8 items-start" id="database">
+      <div class="w-full md:w-1/5 text-gray-400 text-lg font-bold sticky top-18">
+        <div class="category-label cursor-pointer hover:text-white transition" onclick="document.querySelector('#database').scrollIntoView({behavior: 'smooth'})">DATABASE</div>
+      </div>
+      <div class="w-full md:w-4/5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 reveal-section">
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="w-6 h-6"><span class="text-lg">PostgreSQL</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-6 h-6"><span class="text-lg">MySQL</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sql/sql-original.svg" class="w-6 h-6"><span class="text-lg">SQL</span></div>
+        
+      </div>
+    </div>
+
+    <!-- TOOLS -->
+    <div class="flex md:flex-row flex-col gap-8 items-start" id="tools">
+      <div class="w-full md:w-1/5 text-gray-400 text-lg font-bold sticky top-18">
+        <div class="category-label cursor-pointer hover:text-white transition" onclick="document.querySelector('#tools').scrollIntoView({behavior: 'smooth'})">TOOLS</div>
+      </div>
+      <div class="w-full md:w-4/5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 reveal-section">
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="w-6 h-6"><span class="text-lg">Git</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="w-6 h-6"><span class="text-lg">Docker</span></div>
+        <div class="flex items-center gap-2"><img src="./assets/github-logo.png" class="w-6 h-6"><span class="text-lg">GitHub</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GITHUB ACTIVITY SECTION -->
+<section id="github-activity" class="bg-[#0f0f0f] text-white py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4">GitHub Aktivitem</h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+      <!-- GitHub Stats Cards -->
+      <div class="github-stat-card bg-[#111] p-6 rounded-2xl text-center border border-gray-800 hover:border-[#ff6600] transition-all duration-300">
+        <div class="text-3xl font-bold text-[#ff6600] mb-2" id="githubRepos">-</div>
+        <div class="text-gray-400">Public Repolar</div>
+      </div>
+      
+      <div class="github-stat-card bg-[#111] p-6 rounded-2xl text-center border border-gray-800 hover:border-[#ff6600] transition-all duration-300">
+        <div class="text-3xl font-bold text-[#ff6600] mb-2" id="githubStars">-</div>
+        <div class="text-gray-400">Toplam Starlar</div>
+      </div>
+      
+      <div class="github-stat-card bg-[#111] p-6 rounded-2xl text-center border border-gray-800 hover:border-[#ff6600] transition-all duration-300">
+        <div class="text-3xl font-bold text-[#ff6600] mb-2" id="githubFollowers">-</div>
+        <div class="text-gray-400">Followers</div>
+      </div>
+      
+      <div class="github-stat-card bg-[#111] p-6 rounded-2xl text-center border border-gray-800 hover:border-[#ff6600] transition-all duration-300">
+        <div class="text-3xl font-bold text-[#ff6600] mb-2" id="githubCommits">-</div>
+        <div class="text-gray-400">Son Commitler</div>
+      </div>
+    </div>
+
+    <!-- GitHub Activity Feed -->
+    <div class="bg-[#111] rounded-2xl p-6 border border-gray-800">
+      <div class="flex items-center justify-between mb-6">
+        <h3 class="text-xl font-semibold text-[#ff6600]">En son aktivite</h3>
+        <a href="https://github.com/Metrohan" target="_blank" class="text-[#ff6600] hover:text-[#ff6600] transition-colors">
+          Profili görüntüle <i class="fas fa-external-link-alt ml-1"></i>
+        </a>
+      </div>
+      
+      <div id="githubActivity" class="space-y-4">
+        <!-- Activity items will be loaded here -->
+        <div class="flex items-center justify-center py-8">
+          <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-[#ff6600]"></div>
+          <span class="ml-3 text-gray-400">Yükleniyor...</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Top Languages -->
+    <div class="mt-12">
+      <h3 class="text-xl font-semibold text-[#ff6600] mb-6 text-center">En çok kullandığım diller</h3>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="githubLanguages">
+        <!-- Language cards will be loaded here -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG SECTION -->
+<section id="blog" class="bg-black text-white py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4">Blog Yazılarım</h2>
+      <p class="text-gray-400 text-lg">Düşüncelerim, proje yazılarım ve deneyimlerim.</p>
+    </div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Blog Post 1 -->
+      <article class="blog-card bg-[#111] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+        <div class="relative">
+          <img src="./assets/2.webp" 
+               alt="AI Cloud Blog Post" 
+               class="w-full h-48 object-cover"
+               loading="lazy">
+          <div class="absolute top-4 left-4">
+            <span class="bg-[#ff6600] text-black px-3 py-1 rounded-full text-xs font-semibold">AI ve Cloud Sistemleri</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center text-sm text-gray-400 mb-3">
+            <i class="fas fa-calendar mr-2"></i>
+            <span>25 Temmuz, 2025</span>
+            <span class="mx-2">•</span>
+            <i class="fas fa-clock mr-2"></i>
+            <span>Okuma süresi: 2dk</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-white hover:text-[#ff6600] transition-colors">
+            <a href="#" class="block">AI ve Cloud Sistemleri: Teknolojinin Jules ve Vincent’ı</a>
+          </h3>
+          <p class="text-gray-300 mb-4 line-clamp-3">
+            Günümüzün hızla gelişen teknoloji dünyasında, iki kavram sıkça karşımıza çıkıyor ve geleceğimizi şekillendiriyor: AI ve Cloud.
+          </p>
+          <div class="flex items-center justify-between">
+            <a href="https://medium.com/@metehangnn/ai-ve-cloud-sistemler-teknolojinin-jules-ve-vincent%C4%B1-aa152302967d" class="text-[#ff6600] hover:text-[#17b890] font-semibold transition-colors">
+              Daha fazlası <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+            <div class="flex items-center space-x-2">
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Blog Post 2 -->
+      <article class="blog-card bg-[#111] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+        <div class="relative">
+          <img src="./assets/1.webp" 
+               alt="GitHub Readme Generator" 
+               class="w-full h-48 object-cover"
+               loading="lazy">
+          <div class="absolute top-4 left-4">
+            <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-semibold">Proje Yazısı</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center text-sm text-gray-400 mb-3">
+            <i class="fas fa-calendar mr-2"></i>
+            <span>12 Temmuz, 2025</span>
+            <span class="mx-2">•</span>
+            <i class="fas fa-clock mr-2"></i>
+            <span>Okuma süresi: 2dk</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-white hover:text-[#ff6600] transition-colors">
+            <a href="#" class="block">Türkiye’deki Teknoloji Etkinliklerini Takip Etmek Neden Bu Kadar Zor?</a>
+          </h3>
+          <p class="text-gray-300 mb-4 line-clamp-3">
+            Ve Bu Sorunu Kendi Çözümümle Nasıl Kolaylaştırdım?
+          </p>
+          <div class="flex items-center justify-between">
+            <a href="https://medium.com/@metehangnn/t%C3%BCrkiyedeki-teknoloji-etkinliklerini-takip-etmek-neden-bu-kadar-zor-5c2a0e9c3153" class="text-[#ff6600] hover:text-[#ff6600] font-semibold transition-colors">
+              Daha fazlası <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+            <div class="flex items-center space-x-2">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Blog Post 2 -->
+      <!-- <article class="blog-card bg-[#111] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop" 
+               alt="Node.js Backend" 
+               class="w-full h-48 object-cover"
+               loading="lazy">
+          <div class="absolute top-4 left-4">
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-semibold">Node.js</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center text-sm text-gray-400 mb-3">
+            <i class="fas fa-calendar mr-2"></i>
+            <span>Dec 10, 2024</span>
+            <span class="mx-2">•</span>
+            <i class="fas fa-clock mr-2"></i>
+            <span>8 min read</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-white hover:text-[#ff6600] transition-colors">
+            <a href="#" class="block">Building Scalable APIs with Node.js</a>
+          </h3>
+          <p class="text-gray-300 mb-4 line-clamp-3">
+            A comprehensive guide to building robust and scalable REST APIs using Node.js, Express, and MongoDB with best practices for production deployment.
+          </p>
+          <div class="flex items-center justify-between">
+            <a href="#" class="text-[#ff6600] hover:text-[#17b890] font-semibold transition-colors">
+              Read More <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+            <div class="flex items-center space-x-2">
+              <i class="fas fa-heart text-red-400"></i>
+              <span class="text-sm text-gray-400">18</span>
+            </div>
+          </div>
+        </div>
+      </article> -->
+
+      <!-- Blog Post 3 -->
+      <!-- <article class="blog-card bg-[#111] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop" 
+               alt="AI Integration" 
+               class="w-full h-48 object-cover"
+               loading="lazy">
+          <div class="absolute top-4 left-4">
+            <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-semibold">AI</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center text-sm text-gray-400 mb-3">
+            <i class="fas fa-calendar mr-2"></i>
+            <span>Dec 5, 2024</span>
+            <span class="mx-2">•</span>
+            <i class="fas fa-clock mr-2"></i>
+            <span>6 min read</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-white hover:text-[#ff6600] transition-colors">
+            <a href="#" class="block">Integrating AI into Web Applications</a>
+          </h3>
+          <p class="text-gray-300 mb-4 line-clamp-3">
+            Explore how to integrate AI services like Google Gemini into your web applications to create intelligent and interactive user experiences.
+          </p>
+          <div class="flex items-center justify-between">
+            <a href="#" class="text-[#ff6600] hover:text-[#17b890] font-semibold transition-colors">
+              Read More <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+            <div class="flex items-center space-x-2">
+              <i class="fas fa-heart text-red-400"></i>
+              <span class="text-sm text-gray-400">32</span>
+            </div>
+          </div>
+        </div>
+      </article> -->
+    </div>
+
+    <!-- View All Posts Button -->
+    <div class="text-center mt-12">
+      <a href="#" class="inline-flex items-center bg-[#ff6600] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#ff6600] transition-all duration-300 transform hover:scale-105">
+        Tüm postları görüntüle
+        <i class="fas fa-arrow-right ml-2"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- UPCOMING PROJECTS SECTION -->
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="relative bg-black text-white py-20 px-6 overflow-hidden">
+
+  <!-- PARTICLES BACKGROUND -->
+  <div id="particles-projects" class="absolute top-0 left-0 w-full h-full z-0"></div>
+
+  <!-- ACTUAL PROJECT CONTENT -->
+  <div class="relative z-10">
+    <div class="max-w-6xl mx-auto text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4">Projelerim</h2>
+      <p class="text-gray-300 text-lg">Yaptığım bazı projeler.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+
+      <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/eventradar.png" alt="EventRadar Screenshot" class="w-full h-60 object-cover"/>
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">eventradar.dev</h3>
+          <p class="text-gray-700 mb-4">
+            Bu proje, çeşitli Türk teknoloji ve kariyer platformlarından güncel etkinlikleri 
+            (bootcamp'ler, hackathon'lar, yetenek programları vb.) çekmek, 
+            PostgreSQL veritabanında depolamak ve kullanıcı dostu bir web arayüzünde sunmak için geliştirilmiştir. 
+            Python, Selenium, BeautifulSoup, Flask, PostgreSQL, Nginx ve uWSGI teknolojilerini kullanır.
+          </p>
+
+          <!-- Tech Stack Badges -->
+            <div class="flex flex-wrap gap-3 mb-4">
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" class="w-4 h-4" />
+              Python
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" alt="Flask" class="w-4 h-4" />
+              Flask
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" class="w-4 h-4" />
+              Docker
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="Postgre" class="w-4 h-4" />
+              PostgreSQL
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" class="w-4 h-4" />
+              HTML
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" class="w-4 h-4" />
+              CSS
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg" alt="Selenium" class="w-4 h-4" />
+              Selenium
+            </span>  
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/chrome/chrome-original.svg" alt="Chrome" class="w-4 h-4" />
+              Chrome
+            </span>    
+            </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="https://eventradar.dev/" target="_blank"
+              class="bg-[#ff6600] text-white px-4 py-2 rounded hover:bg-[#ff9854] transition-all text-sm">
+              Website 
+            </a>
+            <a href="https://github.com/Metrohan/TechEventRadar" target="_blank"
+              class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub 
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+
+      <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/placeholder.png" alt="AsyncRequest" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">AsyncRequest</h3>
+          <p class="text-gray-700 mb-4">
+            Bu proje, modern web uygulamalarında sıkça karşılaşılan uzun süren işlemleri ("örn. harici API çağrıları") kullanıcıyı bekletmeden 
+            asenkron olarak işleyen bir web servisi geliştirmeyi amaçlamaktadır. 
+            Ayrıca, servisin sağlık durumunu ve performansını gerçek zamanlı olarak izleyebilmek 
+            için metrik toplama yetenekleri de entegre edilmiştir. </p>
+
+          <!-- Tech Stack Badges -->
+            <div class="flex flex-wrap gap-3 mb-4">
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-4 h-4" />
+              Node.js
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" alt="Express.js" class="w-4 h-4" />
+              Express.js
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="Postgre" class="w-4 h-4" />
+              PostgreSQL
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" class="w-4 h-4" />
+              Docker
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prometheus/prometheus-original.svg" alt="Prometheus" class="w-4 h-4" />
+              Prometheus
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original.svg" alt="Vite" class="w-4 h-4" />
+              Grafana
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/k6/k6-original.svg" alt="k6" class="w-4 h-4" />
+              k6
+            </span>
+            </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="https://github.com/Metrohan/AsyncRequest" target="_blank"
+              class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub 
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+
+      <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/enpas.png" alt="ENPAS Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">ENPAS</h3>
+          <p class="text-gray-700 mb-4">
+            Engelli bireyler için otoparklarda yer alan park alanlarının daha etkili korunması ve yetkisiz 
+            kullanımların engellenmesi amacıyla bir bariyer kontrol sistemi geliştirilecektir. 
+            Sistem, bir mobil uygulama aracılığıyla bariyerlerin yükseltilip alçaltılmasını sağlayacak, 
+            sadece doğrulanmış engelli bireyler tarafından kullanılabilecektir. </p>
+
+          <!-- Tech Stack Badges -->
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++" class="w-4 h-4" />
+              C++
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original.svg" alt="Arduino" class="w-4 h-4" />
+              Arduino
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original.svg" alt="ESP32" class="w-4 h-4" />
+              ESP32
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin" class="w-4 h-4" />
+              Kotlin
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="w-4 h-4" />
+              MySQL
+            </span>
+          </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="https://github.com/enpastech/ENPAS" target="_blank"
+              class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub 
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+
+      <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/melodai.png" alt="MelodAI Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">MelodAI</h3>
+          <p class="text-gray-700 mb-4">
+            MelodAI is an intelligent melody generation system that learns your musical taste 
+            through feedback and creates original compositions. It combines 
+            LSTM-based neural networks with reinforcement learning (RL) and music theory to 
+            generate rhythmically and harmonically pleasing melodies.</p>
+
+          <!-- Tech Stack Badges -->
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" class="w-4 h-4" />
+              Python
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" alt="Tensorflow" class="w-4 h-4" />
+              Tensorflow
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="" alt="" class="w-4 h-4" />
+              music21
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/MuseScore_Icon.svg" alt="MuseScore" class="w-4 h-4" />
+              MuseScore
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Python_and_Qt.svg/1200px-Python_and_Qt.svg.png" alt="PyQt" class="w-4 h-4" />
+                PyQt
+            </span>
+          </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="https://github.com/Metrohan/MelodAI" target="_blank"
+              class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub 
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+
+       <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/mandelbrot.png" alt="MandelbrotVisualizer Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">MandelbrotVisualizer</h3>
+          <p class="text-gray-700 mb-4">
+            This project is a high-resolution visualizer for the famous Mandelbrot set, implemented in Python using NumPy 
+            and Matplotlib libraries. The Mandelbrot set is a complex fractal defined by iterating the function 
+            f(z) = z² + c, and it exhibits infinitely intricate boundary patterns that are both mathematically significant 
+            and visually captivating. </p>
+
+          <!-- Tech Stack Badges -->
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" class="w-4 h-4" />
+              Python
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/npm/devicon@2.14.0/icons/numpy/numpy-original.svg" alt="NumPy" class="w-4 h-4" />
+              NumPy
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" alt="Matplotlib" class="w-4 h-4" />
+              Matplotlib
+            </span>
+          </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="https://github.com/Metrohan/MandelbrotVisualizer" target="_blank"
+              class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+
+      <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/multisigwallet.jpg" alt="MultiSigWallet Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">MultiSigWallet</h3>
+          <p class="text-gray-700 mb-4">This project implements a fully functional multi-signature wallet dApp, allowing multiple parties to propose, 
+            confirm, and execute transactions only when a minimum threshold of confirmations is reached. 
+            It is useful for DAOs, joint treasury management, and any shared fund system requiring trust minimization. </p>
+          <!-- Tech Stack Badges -->
+            <div class="flex flex-wrap gap-3 mb-4">
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-4 h-4" />
+              Node.js
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-4 h-4" />
+              React
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-4 h-4" />
+              Tailwind CSS
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://avatars.githubusercontent.com/u/18336414?s=200&v=4" alt="Bootstrap" class="w-4 h-4" />
+              Clarinet
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js" class="w-4 h-4" />
+              Next.js
+            </span>
+            </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="https://github.com/Metrohan/RSA-EncrypterDecrypter" target="_blank"
+              class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub 
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- SINGLE PROJECT CARD --> 
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/placeholder.png" alt="RSA Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">RSA-EncrypterDecrypter</h3>
+          <p class="text-gray-700 mb-4">This program is particularly useful for students studying Computer Engineering or Computer Science. 
+            I originally used it for my Discrete Mathematics midterm, and you're welcome to use or modify the code as needed.  </p>
+          <!-- Tech Stack Badges -->
+            <div class="flex flex-wrap gap-3 mb-4">
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" class="w-4 h-4" />
+              Python
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Python_and_Qt.svg/1200px-Python_and_Qt.svg.png" alt="PyQt" class="w-4 h-4" />
+                PyQt
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Qt_logo_2013.svg" alt="Qt" class="w-4 h-4" />
+                Qt
+            </span>
+            </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="https://github.com/Metrohan/RSA-EncrypterDecrypter" target="_blank"
+              class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub 
+            </a>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM SECTION -->
+<section id="contact-form" class="bg-[#0f0f0f] text-white py-20 px-6">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4">İletişim</h2>
+      <p class="text-gray-400 text-lg">İletişime hep açığım!</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      <!-- Contact Info -->
+      <div class="space-y-6">
+        <div>
+          <h3 class="text-2xl font-semibold mb-4 text-[#ff6600]">Bilgiler</h3>
+        </div>
+        
+        <div class="space-y-4">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 bg-[#ff6600] rounded-full flex items-center justify-center">
+              <i class="fas fa-envelope text-white"></i>
+            </div>
+            <div>
+              <p class="text-sm text-gray-400">Email</p>
+              <p class="text-white">metehangnn@outlook.com</p>
+            </div>
+          </div>
+          
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 bg-[#ff6600] rounded-full flex items-center justify-center">
+              <i class="fas fa-map-marker-alt text-white"></i>
+            </div>
+            <div>
+              <p class="text-sm text-gray-400">Konum</p>
+              <p class="text-white">Istanbul, Türkiye</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="bg-white text-black rounded-2xl p-8 shadow-xl">
+        <form id="contactForm" class="space-y-6">
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <label for="firstName" class="block text-sm font-medium mb-2">İsim <span style="color: red">*</span></label>
+              <input 
+                type="text" 
+                id="firstName" 
+                name="firstName" 
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ff6600] focus:border-transparent transition-all"
+                placeholder="John"
+              >
+            </div>
+            <div>
+              <label for="lastName" class="block text-sm font-medium mb-2">Soyisim</label>
+              <input 
+                type="text" 
+                id="lastName" 
+                name="lastName" 
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ff6600] focus:border-transparent transition-all"
+                placeholder="Doe"
+              >
+            </div>
+          </div>
+          
+          <div>
+            <label for="email" class="block text-sm font-medium mb-2">Email <span style="color: red">*</span></label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ff6600] focus:border-transparent transition-all"
+              placeholder="johndoe@domain.com"
+            >
+          </div>
+          
+          <div>
+            <label for="subject" class="block text-sm font-medium mb-2">Konu <span style="color: red">*</span></label>
+            <select 
+              id="subject" 
+              name="subject" 
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ff6600] focus:border-transparent transition-all"
+            >
+              <option value="">Konu seçiniz</option>
+              <option value="project-inquiry">Proje</option>
+              <option value="job-opportunity">Kariyer</option>
+              <option value="collaboration">Collaboration</option>
+              <option value="general">Genel mesaj</option>
+            </select>
+          </div>
+          
+          <div>
+            <label for="message" class="block text-sm font-medium mb-2">Mesaj <span style="color: red">*</span></label>
+            <textarea 
+              id="message" 
+              name="message" 
+              rows="5" 
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ff6600] focus:border-transparent transition-all resize-none"
+              placeholder="Mesajınızı girin..."
+            ></textarea>
+          </div>
+          
+          <input type="hidden" name="_subject" value="New message from Metehan Günen Portfolio!" />
+          <input type="hidden" name="site" value="Metehan Günen Portfolio" />
+          
+          <button 
+            type="submit" 
+            id="submitBtn"
+            class="w-full bg-[#ff6600] text-white py-3 px-6 rounded-lg font-semibold hover:bg-[#ff6600] transition-all duration-300 transform hover:scale-105 focus:ring-2 focus:ring-[#ff6600] focus:ring-offset-2"
+          >
+            <span id="submitText">Gönder</span>
+            <span id="submitLoading" class="hidden">
+              <i class="fas fa-spinner fa-spin mr-2"></i>Gönderiliyor...
+            </span>
+          </button>
+        </form>
+        
+        <!-- Success/Error Messages -->
+        <div id="formMessage" class="mt-4 p-4 rounded-lg hidden">
+          <p id="messageText"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="bg-black text-white py-20 px-6 flex items-center justify-center">
+  <div class="w-full max-w-4xl text-center flex flex-col items-center gap-6">
+    <!-- Subtitle -->
+    <p class="text-gray-400 text-lg">Mail adresim:</p>
+
+    <!-- Email Link -->
+    <a href="mailto:metehangnn@outlook.com" class="hover:text-gray-400 transition">
+      <h2 class="text-4xl font-bold mb-2">metehangnn@outlook.com</h2>
+    </a>
+
+
+  <span
+    class="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 bg-white opacity-10 transition-all duration-1000 ease-out group-hover:-translate-x-40"
+  ></span>
+  <div class="flex items-center">
+    <p>Thanks for Abhijeet Bhale for this website and idea!</p>
+  </div>
+</a>
+  </div>  
+</section>
+    <a
+      href="mailto:metehangnn@outlook.com?subject=Metehan Günen Portfolyö Mail&body=Merhabalar,%0D%0A%0D%0A"
+      class="fixed-email"
+      title="Mail Me"
+    >
+      metehangnn@outlook.com
+    </a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://unpkg.com/@motionone/dom/dist/motion.min.js"></script>
+    <script src="libs/gsap.min.js"></script>
+    <script src="libs/motion.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Observer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Draggable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EaselPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/PixiPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EasePack.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/CustomEase.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- ParticleJs -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Back to Top Button -->
+    <div class="wrapper">
+      <button class="back2top-button" id="backToTop">
+        <svg class="svgIcon" viewBox="0 0 384 512">
+          <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/>
+        </svg>
+        <span class="button-label">En üste git</span>
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
