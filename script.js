@@ -489,7 +489,7 @@ Message:
 ${data.message}
         `);
         
-        const mailtoLink = `mailto:metehangnn@outlook.com?subject=${emailSubject}&body=${emailBody}`;
+        const mailtoLink = `mailto:metehangnen@gmail.com?subject=${emailSubject}&body=${emailBody}`;
         
         showMessage(`Form submission failed. <a href="${mailtoLink}" class="underline">Click here to send email directly</a> or try again later.`, 'error');
       } finally {
