@@ -11,22 +11,6 @@ window.addEventListener("scroll", () => {
 // Loading animation
 const letters = document.querySelectorAll(".loading-text span");
 
-// Animation for Hero Text
-gsap.from(".hero-left", {
-  opacity: 0,
-  x: -50,
-  duration: 1.2,
-  ease: "power3.out",
-});
-
-gsap.from(".hero-right", {
-  opacity: 0,
-  x: 50,
-  duration: 1.2,
-  ease: "power3.out",
-  delay: 0.3,
-});
-
 gsap.utils.toArray(".journey-card").forEach((card, index) => {
   gsap.from(card, {
     opacity: 0,
@@ -170,9 +154,9 @@ gsap.from(".project-card", {
     delay: 0.2
   });
   
-  gsap.from("#techstack h2", {
+  gsap.from("#tech-stack h2", {
     scrollTrigger: {
-      trigger: "#techstack",
+      trigger: "#tech-stack",
       start: "top 80%",
       toggleActions: "play none none reset"
     },
@@ -181,8 +165,8 @@ gsap.from(".project-card", {
     duration: 1.2,
     ease: "power3.out"
   });
-  
-  gsap.utils.toArray("#techstack .group").forEach((card, i) => {
+
+  gsap.utils.toArray("#tech-stack .group").forEach((card, i) => {
     gsap.from(card, {
       scrollTrigger: {
         trigger: card,
@@ -570,18 +554,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // Service Worker registration for PWA features
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/sw.js')
-        .then(registration => {
-          console.log('SW registered: ', registration);
-        })
-        .catch(registrationError => {
-          console.log('SW registration failed: ', registrationError);
-        });
-    });
-  }
 });
   
 // GitHub API Integration
