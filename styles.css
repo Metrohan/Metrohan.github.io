@@ -263,31 +263,10 @@ h2.section-title {
 }
 
 .hero-role {
-  font-size: clamp(1.0625rem, 2vw, 1.25rem);
-  color: var(--fg-dim);
-  max-width: 52ch;
-  margin-bottom: 40px;
-}
-
-.status-rows {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  border-top: 1px solid var(--line);
-  padding-top: 28px;
-}
-
-.status-row {
-  display: flex;
-  gap: 16px;
-  align-items: baseline;
+  font-family: var(--font-mono);
   font-size: 0.9375rem;
-}
-
-.status-row .mono {
-  color: var(--fg-faint);
-  width: 44px;
-  flex-shrink: 0;
+  color: var(--fg-dim);
+  max-width: 64ch;
 }
 
 .scroll-cue {
